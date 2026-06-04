@@ -1,0 +1,7 @@
+UNISKA Certificate Verification
+
+Contract ID:
+CDJJXVROLDFE77PX5DR6MPR6TX65RATIRKEXHBE64EQT6COXXU5DOFXW
+
+Network:
+Stellar Testnet
