@@ -1,0 +1,206 @@
+html,
+body,
+#root{
+  width:100%;
+  min-height:100vh;
+  margin:0;
+  padding:0;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+}
+
+.app{
+  min-height:100vh;
+  width:100%;
+  padding:40px;
+  background:linear-gradient(
+    135deg,
+    #081028,
+    #153d9f,
+    #2563eb
+  );
+}
+
+.hero{
+  text-align:center;
+  color:white;
+  margin-bottom:50px;
+}
+
+.logo{
+  font-size:80px;
+  margin-bottom:10px;
+}
+
+.hero h1{
+  font-size:clamp(48px,5vw,90px);
+  font-weight:800;
+  line-height:1.1;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:22px;
+  color:#dbeafe;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  width:100%;
+  background:white;
+  border-radius:30px;
+  padding:50px;
+  box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.card h2{
+  text-align:center;
+  color:#1e3a8a;
+  font-size:48px;
+  margin-bottom:30px;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+input{
+  width:100%;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid #cbd5e1;
+  font-size:18px;
+}
+
+input:focus{
+  outline:none;
+  border-color:#2563eb;
+}
+
+.buttons{
+  display:flex;
+  gap:20px;
+}
+
+button{
+  flex:1;
+  padding:20px;
+  border:none;
+  border-radius:15px;
+  font-size:20px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.save-btn{
+  background:#2563eb;
+  color:white;
+}
+
+.verify-btn{
+  background:#081028;
+  color:white;
+}
+
+button:hover{
+  transform:translateY(-4px);
+}
+
+.contract-card{
+  margin-top:30px;
+  width:100%;
+  padding:30px;
+  border-radius:25px;
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(12px);
+  color:white;
+}
+
+.contract-card h3{
+  margin-bottom:15px;
+}
+
+.contract-id{
+  background:rgba(0,0,0,.2);
+  padding:20px;
+  border-radius:15px;
+  word-break:break-all;
+  font-size:18px;
+}
+
+.features{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.feature{
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+}
+
+.feature span{
+  font-size:60px;
+}
+
+.feature h4{
+  color:#1e3a8a;
+  margin-top:10px;
+  font-size:24px;
+}
+
+.feature p{
+  margin-top:10px;
+  color:#64748b;
+}
+
+footer{
+  text-align:center;
+  color:white;
+  margin-top:40px;
+  font-size:18px;
+}
+
+@media(max-width:768px){
+
+  .app{
+    padding:20px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .card{
+    padding:25px;
+  }
+
+  .card h2{
+    font-size:30px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+}
