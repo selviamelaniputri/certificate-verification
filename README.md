@@ -1,111 +1,87 @@
-# UNISKA Certificate Verification
+# 🎓 Student Achievement Verification
 
-## Project Description
+Student Achievement Verification adalah aplikasi berbasis **Stellar Blockchain Smart Contracts** yang digunakan untuk mencatat dan memverifikasi prestasi mahasiswa secara aman, transparan, dan terdesentralisasi.
 
-UNISKA Certificate Verification is a blockchain-based certificate verification system built using Stellar Smart Contracts. This project demonstrates how academic certificates can be verified transparently and securely through blockchain technology.
+## 📌 Features
 
-The system stores certificate verification data on the Stellar Testnet and provides a simple web interface for users to view and verify the deployed smart contract.
+* Record student achievements on Stellar Blockchain
+* Verify achievement data securely
+* Smart Contract integration using Soroban
+* Modern React frontend
+* Responsive user interface
+* Deployed on Vercel
 
----
+## 🛠️ Technologies Used
 
-## Features
+### Frontend
 
-* Blockchain-based certificate verification
-* Stellar Smart Contract integration
-* Smart Contract deployment on Stellar Testnet
-* Modern React frontend interface
-* Transparent and secure verification process
-
----
-
-## Smart Contract Information
-
-**Contract ID**
-
-```text
-CDJJXVROLDFE77PX5DR6MPR6TX65RATIRKEXHBE64EQT6COXXU5DOFXW
-```
-
-**Network**
-
-```text
-Stellar Testnet
-```
-
----
-
-## Technology Stack
-
-* Stellar Smart Contracts (Soroban)
-* Rust
 * React.js
 * Vite
-* JavaScript
-* GitHub
+* CSS3
 
----
+### Blockchain
 
-## Frontend Screenshot
+* Stellar Soroban Smart Contracts
+* Rust
+* Stellar CLI
 
-Frontend interface:
-
-![Frontend Screenshot](frontend.png)
-
----
-
-## Deployment Screenshot
-
-Smart contract deployment result:
-
-![Deployment Screenshot](deploy.png)
-
----
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
-uniska-certificate-verification/
-│
+ProjectStellar/
 ├── frontend/
 │   ├── src/
 │   ├── public/
 │   └── package.json
 │
-├── uniska-certificate/
-│   └── contracts/
-│
-├── contract-id.txt
-├── frontend.png
-├── deploy.png
-└── README.md
+└── student-achievement-verification/
+    └── contracts/
+        └── hello-world/
+            └── src/lib.rs
 ```
 
----
+## 🔗 Smart Contract Information
 
-## How to Run
+**Network:** Stellar Testnet
 
-### Frontend
+**Contract ID:**
 
-```bash
-cd frontend
-npm install
-npm run dev
+```text
+CAHFMDMJOFSHCGX6X4JNR7WV564NDNAP5RGWZ4ARJDUNKIHA3JSX2AKK
 ```
 
-### Smart Contract
+### Available Functions
 
-```bash
-cd uniska-certificate
-stellar contract build
-stellar contract deploy
+#### Save Achievement
+
+```rust
+save_achievement(
+    student_name,
+    achievement,
+    year
+)
 ```
 
----
+#### Get Achievement
 
-## Author
+```rust
+get_achievement()
+```
 
-**Selvia Melani Putri**
+## 🌐 Live Demo
 
-UNISKA MAB Banjarmasin
+Website:
 
-Blockchain Workshop Submission Project
+https://certificate-verification.vercel.app
+
+## 📸 Screenshots
+
+Frontend interface and deployment screenshots are available in this repository.
+
+## 👩‍💻 Developer
+
+Selvia Melani Putri
+
+## 📚 Project Purpose
+
+This project was developed as part of a blockchain and smart contract learning workshop using the Stellar ecosystem. The application demonstrates how academic achievement records can be stored and verified through decentralized technology.
