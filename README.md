@@ -1,22 +1,49 @@
-# 🎓 Student Achievement Verification
+# 🎓 Student Achievement Verification DApp
 
-Student Achievement Verification is a blockchain-based application built on **Stellar Smart Contracts (Soroban)** to securely record and verify student achievements. The project demonstrates how academic records can be stored and verified using decentralized technology.
+A decentralized student achievement verification application built on the Stellar blockchain using Soroban Smart Contracts.
 
----
+## Project Description
 
-## 📌 Features
+Student Achievement Verification DApp is a blockchain-based application that allows student achievements to be securely recorded and verified using Stellar Smart Contracts. The system provides transparent, tamper-resistant, and decentralized academic record verification.
 
-- Record student achievements on Stellar Blockchain
-- Verify achievement data securely
-- Smart Contract integration using Soroban
-- Modern React frontend
-- Responsive user interface
-- Deployed on Vercel
-- Stellar Mainnet deployment
+The application demonstrates how educational achievement records can be stored and validated through blockchain technology, improving trust and reducing the risk of data manipulation.
 
----
+## Key Features
 
-## 🛠️ Technologies Used
+1. **Record Achievement** - Store student achievement information on the Stellar blockchain.
+2. **Verify Achievement** - Retrieve and validate achievement records securely.
+3. **Smart Contract Integration** - Built using Stellar Soroban Smart Contracts.
+4. **Mainnet Deployment** - Smart contract deployed on Stellar Mainnet.
+5. **Responsive Frontend** - Modern React-based user interface.
+6. **Decentralized Verification** - Blockchain-backed academic record verification.
+
+## Smart Contract
+
+### Contract ID (Mainnet)
+
+```text
+CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
+```
+
+### Network
+
+Stellar Mainnet
+
+### Available Functions
+
+```rust
+save_achievement(
+    student_name,
+    achievement,
+    year
+)
+```
+
+```rust
+get_achievement()
+```
+
+## Tech Stack
 
 ### Frontend
 
@@ -29,10 +56,49 @@ Student Achievement Verification is a blockchain-based application built on **St
 - Stellar Soroban Smart Contracts
 - Rust
 - Stellar CLI
+- Stellar SDK
 
----
+## Live Demo
 
-## 📂 Project Structure
+https://certificate-verification.vercel.app
+
+## Stellar Explorer
+
+https://stellar.expert/explorer/public/contract/CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
+
+## How to Run
+
+### Clone Repository
+
+```bash
+git clone https://github.com/selviamelaniputri/certificate-verification.git
+```
+
+### Go to Frontend Directory
+
+```bash
+cd frontend
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+### Open Browser
+
+```text
+http://localhost:5173
+```
+
+## Project Structure
 
 ```text
 certificate-verification/
@@ -49,77 +115,23 @@ certificate-verification/
 └── README.md
 ```
 
----
+## Frontend Screenshot
 
-## 🔗 Smart Contract Information
+Add project screenshots here.
 
-**Network:** Stellar Mainnet
-
-**Contract ID:**
-
-```text
-CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
-```
-
-**Explorer:**
-
-https://stellar.expert/explorer/public/contract/CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
-
-### Available Functions
-
-#### Save Achievement
-
-```rust
-save_achievement(
-    student_name,
-    achievement,
-    year
-)
-```
-
-#### Get Achievement
-
-```rust
-get_achievement()
-```
-
----
-
-## 🚀 Deployment Status
-
-✅ Smart Contract deployed on Stellar Mainnet
-
-✅ Frontend deployed on Vercel
-
----
-
-## 🌐 Live Demo
-
-Website:
-
-https://certificate-verification.vercel.app
-
----
-
-## 📸 Screenshots
-
-Frontend interface, deployment process, and Stellar Expert contract screenshots are available in this repository.
-
----
-
-## 👩‍💻 Developer
+## Developer
 
 **Selvia Melani Putri**
 
----
+## Workshop Information
 
-## 📚 Project Purpose
+This project was developed as part of a Stellar Smart Contract Workshop using Soroban SDK and Stellar Mainnet deployment.
 
-This project was developed as part of a blockchain and smart contract learning workshop using the Stellar ecosystem. The application demonstrates how academic achievement records can be stored and verified through decentralized blockchain technology.
+## Verification Links
 
----
+### Live Application
 
-## 🔍 Verification
+https://certificate-verification.vercel.app
 
 ### Mainnet Contract
 
@@ -127,10 +139,6 @@ This project was developed as part of a blockchain and smart contract learning w
 CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
 ```
 
-### Stellar Expert
+### Stellar Expert Explorer
 
 https://stellar.expert/explorer/public/contract/CBUHNZ437VIDHU3VWI3IC35UGUBHPUOUWGSIETUQM2UT34K4LGHNYOIS
-
-### Live Application
-
-https://certificate-verification.vercel.app
